@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  tools:context=".SignUpActivity"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@drawable/sincerely">
+
+  <TextView
+    android:id="@+id/signUpTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:fontFamily="@font/nova_slim"
+    android:text="BookIt"
+    android:textSize="25sp"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"/>
+
+  <TextView
+    android:id="@+id/signUpText"
+    android:layout_width="225dp"
+    android:layout_height="41dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="75dp"
+    android:background="@drawable/box"
+    android:fontFamily="@font/pt_mono"
+    android:gravity="center"
+    android:text="Sign Up"
+    android:textAlignment="center"
+    android:textColor="@color/PrimaryText"
+    android:textSize="20sp" />
+
+  <TextView
+    android:id="@+id/editTextSignUpEmail"
+    android:layout_width="256dp"
+    android:layout_height="26dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="280dp"
+    android:textSize="18sp"
+    android:hint="Enter Email:"
+    android:background="@color/PrimaryText"
+    android:textColor="@color/SecondaryText"
+    android:fontFamily="@font/pt_mono"/>
+
+  <TextView
+    android:id="@+id/editTextSignUpPassword"
+    android:layout_width="256dp"
+    android:layout_height="26dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="310dp"
+    android:textSize="18sp"
+    android:hint="Enter Password:"
+    android:background="@color/PrimaryText"
+    android:textColor="@color/SecondaryText"
+    android:fontFamily="@font/pt_mono"/>
+
+  <TextView
+    android:id="@+id/editTextSignUpPassword2"
+    android:layout_width="256dp"
+    android:layout_height="26dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="340dp"
+    android:textSize="18sp"
+    android:hint="Re-Enter Password:"
+    android:background="@color/PrimaryText"
+    android:textColor="@color/SecondaryText"
+    android:fontFamily="@font/pt_mono"/>
+
+  <TextView
+    android:id="@+id/editTextSignUpUsername"
+    android:layout_width="256dp"
+    android:layout_height="26dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="250dp"
+    android:textSize="18sp"
+    android:hint="Enter Username:"
+    android:background="@color/PrimaryText"
+    android:textColor="@color/SecondaryText"
+    android:fontFamily="@font/pt_mono"/>
+
+  <Button
+    android:id="@+id/signUpConfirmButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Confirm"
+    android:background="@drawable/box"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="500dp"/>
+
+
+</RelativeLayout>
