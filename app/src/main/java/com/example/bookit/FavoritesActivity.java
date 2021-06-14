@@ -9,13 +9,12 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class HomeActivity extends AppCompatActivity {
-
+public class FavoritesActivity extends AppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_home);
+    setContentView(R.layout.activity_favorites);
 
     BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.homeNavBar);
     bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -23,15 +22,15 @@ public class HomeActivity extends AppCompatActivity {
       public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()) {
           case R.id.home:
-            Intent homeIntent = new Intent(HomeActivity.this, HomeActivity.class);
+            Intent homeIntent = new Intent(FavoritesActivity.this, HomeActivity.class);
             startActivity(homeIntent);
 
           case R.id.search:
-            Intent searchIntent = new Intent(HomeActivity.this, SearchActivity.class);
+            Intent searchIntent = new Intent(FavoritesActivity.this, SearchActivity.class);
             startActivity(searchIntent);
 
           case R.id.user:
-            Intent userIntent = new Intent(HomeActivity.this, UserActivity.class);
+            Intent userIntent = new Intent(FavoritesActivity.this, UserActivity.class);
             startActivity(userIntent);
         }
         return true;

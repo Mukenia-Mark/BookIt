@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:tools="http://schemas.android.com/tools"
   tools:context=".MainActivity"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:background="@drawable/sincerely">
@@ -13,6 +14,7 @@
     android:layout_centerHorizontal="true"
     android:layout_marginTop="10dp"
     android:fontFamily="@font/nova_slim"
+    android:textColor="@color/SecondaryText"
     android:text="BookIt"
     android:textSize="25sp"
     android:textStyle="bold" />
@@ -30,8 +32,10 @@
     android:textAlignment="center"
     android:textColor="@color/PrimaryText"
     android:textSize="20sp" />
-  <TextView
+
+  <EditText
     android:id="@+id/editTextLogInPassword"
+    android:inputType="textPassword"
     android:layout_width="256dp"
     android:layout_height="26dp"
     android:layout_centerHorizontal="true"
@@ -43,7 +47,7 @@
     android:fontFamily="@font/pt_mono"/>
 
 
-  <TextView
+  <EditText
     android:id="@+id/editTextLogInUsername"
     android:layout_width="256dp"
     android:layout_height="26dp"
@@ -54,6 +58,18 @@
     android:background="@color/PrimaryText"
     android:textColor="@color/SecondaryText"
     android:fontFamily="@font/pt_mono"/>
+
+  <Button
+    android:id="@+id/switchToSignUpButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Don't have an account: Sign Up"
+    android:textSize="10sp"
+    android:textColor="@color/SecondaryText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="330dp"
+    android:fontFamily="@font/pt_mono"
+    app:backgroundTint="#FFFFFF"/>
 
   <Button
     android:id="@+id/logInConfirmButton"

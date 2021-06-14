@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   tools:context=".SignUpActivity"
   android:layout_width="match_parent"
@@ -12,6 +13,7 @@
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:fontFamily="@font/nova_slim"
+    android:textColor="@color/SecondaryText"
     android:text="BookIt"
     android:textSize="25sp"
     android:textStyle="bold"
@@ -31,7 +33,7 @@
     android:textColor="@color/PrimaryText"
     android:textSize="20sp" />
 
-  <TextView
+  <EditText
     android:id="@+id/editTextSignUpEmail"
     android:layout_width="256dp"
     android:layout_height="26dp"
@@ -43,8 +45,9 @@
     android:textColor="@color/SecondaryText"
     android:fontFamily="@font/pt_mono"/>
 
-  <TextView
+  <EditText
     android:id="@+id/editTextSignUpPassword"
+    android:inputType="textPassword"
     android:layout_width="256dp"
     android:layout_height="26dp"
     android:layout_centerHorizontal="true"
@@ -55,8 +58,9 @@
     android:textColor="@color/SecondaryText"
     android:fontFamily="@font/pt_mono"/>
 
-  <TextView
+  <EditText
     android:id="@+id/editTextSignUpPassword2"
+    android:inputType="textPassword"
     android:layout_width="256dp"
     android:layout_height="26dp"
     android:layout_centerHorizontal="true"
@@ -67,7 +71,7 @@
     android:textColor="@color/SecondaryText"
     android:fontFamily="@font/pt_mono"/>
 
-  <TextView
+  <EditText
     android:id="@+id/editTextSignUpUsername"
     android:layout_width="256dp"
     android:layout_height="26dp"
@@ -78,6 +82,19 @@
     android:background="@color/PrimaryText"
     android:textColor="@color/SecondaryText"
     android:fontFamily="@font/pt_mono"/>
+
+  <Button
+    android:id="@+id/switchToLogInButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="370dp"
+    android:fontFamily="@font/pt_mono"
+    android:text="Already have an account: Log In"
+    android:textColor="@color/SecondaryText"
+    android:textSize="10sp"
+    app:backgroundTint="#FFFFFF" />
+
 
   <Button
     android:id="@+id/signUpConfirmButton"

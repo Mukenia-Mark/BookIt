@@ -2,25 +2,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
-  tools:context=".HomeActivity"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
+  tools:context=".FavoritesActivity"
   android:background="@drawable/fang">
 
   <TextView
-    android:id="@+id/logInTitle"
+    android:id="@+id/title"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="10dp"
     android:fontFamily="@font/nova_slim"
     android:textColor="@color/SecondaryText"
-    android:text="Welcome "
+    android:text="Welcome"
     android:textSize="25sp"
     android:textStyle="bold" />
 
   <TextView
-    android:id="@+id/logInText"
+    android:id="@+id/myBooksText"
     android:layout_width="225dp"
     android:layout_height="41dp"
     android:layout_centerHorizontal="true"
@@ -28,18 +28,10 @@
     android:background="@drawable/box"
     android:fontFamily="@font/pt_mono"
     android:gravity="center"
-    android:text="Home"
+    android:text="My Books"
     android:textAlignment="center"
     android:textColor="@color/PrimaryText"
     android:textSize="20sp" />
-
-  <ListView
-    android:id="@+id/myListList"
-    android:layout_width="match_parent"
-    android:layout_height="560dp"
-    android:layout_marginTop="130dp"
-    android:background="@color/PrimaryLight">
-  </ListView>
 
   <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/homeNavBar"
@@ -51,6 +43,10 @@
     app:itemIconTint="@color/SecondaryText"
     app:itemTextColor="@color/SecondaryText"/>
 
-
+  <ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    android:layout_marginTop="150dp"/>
 
 </RelativeLayout>
